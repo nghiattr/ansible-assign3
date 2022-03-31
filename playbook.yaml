@@ -1,0 +1,8 @@
+- name: Install Java
+  hosts: windows-vm,linux-vm
+  # become: false 
+  # gather_facts: false 
+  roles:
+    - role-java
+
+

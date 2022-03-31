@@ -1,0 +1,19 @@
+
+[linux-vm]
+104.208.112.91
+
+[linux-vm:vars]
+ansible_user=labadmin
+ansible_ssh_private_key_file=~/.ssh/id_rsa
+ansible_python_interpreter=/usr/bin/python3
+
+[windows-vm]
+104.208.112.97
+
+[windows-vm:vars]
+ansible_user=labadmin
+ansible_password=Password1234!
+ansible_connection=winrm
+ansible_winrm_transport=basic
+ansible_winrm_port= 5985
+ansible_winrm_server_cert_validation=ignore
